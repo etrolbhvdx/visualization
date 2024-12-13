@@ -1,0 +1,605 @@
+Variable           Format    Q#/Freq             Description/Label
+ 
+PUF_ID             PUFFMT                        Unique PUF Identification Number         
+                              7,513    LOW-HIGH          PUF_ID Count                                                               
+ 
+SURVEYYR           SVYRFMT                       Survey year                              
+                              7,513                2022  2022                                                                       
+         Notes:  Previously named SVYYR.
+ 
+VERSION            VERSFMT                       Version number                           
+                              7,513                   1  Version 1                                                                  
+ 
+CVS_CVDBOOST       YESFMT    VACROST             Got CV19 booster (2022-23)               
+                              3,413                   1  1:Yes                                                                      
+                              4,100                   2  2:No                                                                       
+         Notes:  Refers to dose received between 9/1/22 & summer interview.
+                 First available in 2022
+ 
+CVS_VCNUMS         VACNUMF   CVDVAC              Number CV19 vaccine doses by Summer 2023 
+                                833                   0  0:No recorded doses                                                        
+                                179                   1  1:1 dose                                                                   
+                                930                   2  2:2 doses                                                                  
+                              1,578                   3  3:3 doses                                                                  
+                              1,860                   4  4:4 doses                                                                  
+                              2,133                   5  5:5+ doses                                                                 
+                 First available in 2021
+ 
+FIS_FOODLAST       FMTFDLAS  FS1                 Food doesn’t last, no money to get more  
+                                 10                   D  .D:Don't know                                                              
+                                  9                   R  .R:Refused                                                                 
+                                296                   1  1:Often true                                                               
+                                768                   2  2:Sometimes true                                                           
+                              6,430                   3  3:Never true                                                               
+ 
+FIS_AFFDMEAL       FMTFDLAS  FS2                 Can't afford to eat balanced meals       
+                                 21                   D  .D:Don't know                                                              
+                                  9                   R  .R:Refused                                                                 
+                                281                   1  1:Often true                                                               
+                                742                   2  2:Sometimes true                                                           
+                              6,460                   3  3:Never true                                                               
+ 
+FIS_SKIPMEAL       YESFMT    FS3A                Adults skip meals due to cost            
+                                  1                   D  .D:Don't know                                                              
+                                  9                   R  .R:Refused                                                                 
+                                520                   1  1:Yes                                                                      
+                              6,983                   2  2:No                                                                       
+ 
+FIS_EATLESS        YESFMT    FS4                 Eat less bc not enough money             
+                                  6                   D  .D:Don't know                                                              
+                                  9                   R  .R:Refused                                                                 
+                                503                   1  1:Yes                                                                      
+                              6,995                   2  2:No                                                                       
+ 
+RXS_PDEASY         EASYDIFF  RXPD2               Mcare Rx drug benefit easy understand    
+                                569                   D  .D:Don't know                                                              
+                                  5                   N  .N:Not ascertained                                                         
+                                 12                   R  .R:Refused                                                                 
+                                435                   .  Inapplicable/Missing                                                       
+                              1,933                   1  1:Very easy                                                                
+                              2,768                   2  2:Somewhat easy                                                            
+                              1,364                   3  3:Somewhat difficult                                                       
+                                427                   4  4:Very difficult                                                           
+         Notes:  Complex skip logic. Please see RXQ Community Questionnaire.
+ 
+RXS_PDKNOW         KN2F      RXPD3               Mcare Rx drug benefit knowledge          
+                                128                   D  .D:Don't know                                                              
+                                  5                   N  .N:Not ascertained                                                         
+                                  5                   R  .R:Refused                                                                 
+                                435                   .  Inapplicable/Missing                                                       
+                              1,002                   1  1:Just about everything you need to know                                   
+                              2,324                   2  2:Most of what you need to know                                            
+                              1,801                   3  3:Some of what you need to know                                            
+                                955                   4  4:A little of what you need to know                                        
+                                858                   5  5:Almost none of what you need to know                                     
+         Notes:  Complex skip logic. Please see RXQ Community Questionnaire.
+ 
+RXS_PDSATSFP       SAT2FMT   RXPD23A             Mcare Rx plan: satisfied w info          
+                                 36                   D  .D:Don't know                                                              
+                                  1                   N  .N:Not ascertained                                                         
+                              2,166                   .  Inapplicable/Missing                                                       
+                              5,112                   1  1:Satsified/very satisfied                                                 
+                                198                   2  2:Dissatisfied/very dissatisfied                                           
+         Notes:  Complex skip logic. Please see RXQ Community Questionnaire.
+ 
+RXS_PDCONFIP       PDCONFIP  RX2                 Confident level of coverage meets needs  
+                                 71                   D  .D:Don't know                                                              
+                                  1                   N  .N:Not ascertained                                                         
+                                  1                   R  .R:Refused                                                                 
+                              1,688                   .  Inapplicable/Missing                                                       
+                              3,992                   1  1:Very/extremely confident                                                 
+                              1,268                   2  2:Moderately confident                                                     
+                                492                   3  3:Not/slightly confident                                                   
+         Notes:  Complex skip logic. Please see RXQ Community Questionnaire.
+ 
+RXS_RXUSEPLN       YESFMT    RX3                 Used Mcare Rx drug plan past yr          
+                                 32                   D  .D:Don't know                                                              
+                                  1                   N  .N:Not ascertained                                                         
+                              1,688                   .  Inapplicable/Missing                                                       
+                              5,392                   1  1:Yes                                                                      
+                                400                   2  2:No                                                                       
+         Notes:  Complex skip logic. Please see RXQ Community Questionnaire.
+ 
+RXS_RXCOSTLY       RXCOSTLF  RX4                 Compared to last year, premium cost      
+                                423                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                                993                   1  1:More than last year                                                      
+                                613                   2  2:Less than last year                                                      
+                              2,895                   3  3:The same as last year                                                    
+                                467                   4  4:No drug coverage premium last year                                       
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_RXAMNTLY       RXAMNTLF  RX5                 Compared to last year, Rx cost           
+                                186                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                              1,037                   1  1:More than last year                                                      
+                                617                   2  2:Less than last year                                                      
+                              3,306                   3  3:The same as last year                                                    
+                                245                   4  4:No cost for RX last year                                                 
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_PDNOCVG        YESFMT    RX7                 Rx that are not covered                  
+                                 52                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                                613                   1  1:Yes                                                                      
+                              4,725                   2  2:No                                                                       
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_RXCHGMED       YESFMT    RX8                 Change to generic for coverage           
+                                 85                   D  .D:Don't know                                                              
+                                  2                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                                541                   1  1:Yes                                                                      
+                              4,764                   2  2:No                                                                       
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_RXSWTCH        YESFMT    RX9                 Change to different drug for coverage    
+                                 35                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                                314                   1  1:Yes                                                                      
+                              5,042                   2  2:No                                                                       
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_RXPARTIC       YESFMT    RX16                Current pharmacy participation           
+                                 26                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                              5,039                   1  1:Yes                                                                      
+                                326                   2  2:No                                                                       
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_PDRXRATP       SAT2FMT   RX17                Level of satisfaction with Rx coverage   
+                                  8                   D  .D:Don't know                                                              
+                                  1                   R  .R:Refused                                                                 
+                              2,121                   .  Inapplicable/Missing                                                       
+                              5,137                   1  1:Satsified/very satisfied                                                 
+                                246                   2  2:Dissatisfied/very dissatisfied                                           
+         Notes:  Applies only if RXS_RXUSEPLN = 1.
+ 
+RXS_MCAMTPAY       SATFFMT   SC8C                Satisfaction: amt paid for Rx drugs      
+                                 28                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                              2,847                   1  1:Very Satisfied                                                           
+                              3,358                   2  2:Satisfied                                                                
+                                567                   3  3:Dissatisfied                                                             
+                                164                   4  4:Very Dissatisfied                                                        
+                                546                   5  5:No experience                                                            
+         Notes:  Results include all respondents.
+                 Previously named ACC_MCAMTPAY.
+ 
+RXS_MCDRGLST       SATFFMT   SC8D                Satisfaction:Rx plan list/drugs covered  
+                                 82                   D  .D:Don't know                                                              
+                                832                   N  .N:Not ascertained                                                         
+                                  3                   R  .R:Refused                                                                 
+                                435                   .  Inapplicable/Missing                                                       
+                              1,998                   1  1:Very Satisfied                                                           
+                              3,505                   2  2:Satisfied                                                                
+                                280                   3  3:Dissatisfied                                                             
+                                 61                   4  4:Very Dissatisfied                                                        
+                                317                   5  5:No experience                                                            
+         Notes:  Inapplicable if no prescription drug coverage.
+                 Previously named ACC_MCDRGLST.
+ 
+RXS_MCFNDPCY       SATFFMT   SC8E                Satisfaction: find pharmacy accept Rx    
+                                 21                   D  .D:Don't know                                                              
+                                832                   N  .N:Not ascertained                                                         
+                                  2                   R  .R:Refused                                                                 
+                                435                   .  Inapplicable/Missing                                                       
+                              3,055                   1  1:Very Satisfied                                                           
+                              2,821                   2  2:Satisfied                                                                
+                                 65                   3  3:Dissatisfied                                                             
+                                 11                   4  4:Very Dissatisfied                                                        
+                                271                   5  5:No experience                                                            
+         Notes:  Inapplicable if no prescription drug coverage.
+                 Previously named ACC_MCFNDPCY.
+ 
+RXS_MCRECPLN       YES2FMT   SC8F                Recommend Rx plan to other people        
+                                183                   D  .D:Don't know                                                              
+                                832                   N  .N:Not ascertained                                                         
+                                  3                   R  .R:Refused                                                                 
+                                435                   .  Inapplicable/Missing                                                       
+                              5,318                   1  1:Yes                                                                      
+                                525                   2  2:No                                                                       
+                                217                   3  3:No experience                                                            
+         Notes:  Inapplicable if no prescription drug coverage.
+                 Previously named ACC_MCRECPLN.
+ 
+RXS_GENERRX        GENERRP   SC20                How often ask for generic form of Rx     
+                                116                   D  .D:Don't know                                                              
+                                  5                   R  .R:Refused                                                                 
+                                537                   1  1:Often                                                                    
+                                382                   2  2:Sometimes                                                                
+                              3,874                   3  3:Never                                                                    
+                              2,599                   4  4:Automatically receives generic                                           
+ 
+RXS_MAILRX         FREQFMT   SC20                How often purchased Rx via mail/internet 
+                                  9                   D  .D:Don't know                                                              
+                                  6                   R  .R:Refused                                                                 
+                              1,393                   1  1:Often                                                                    
+                                389                   2  2:Sometimes                                                                
+                              5,716                   3  3:Never                                                                    
+ 
+RXS_DOSESRX        FREQFMT   SC20                How often took smaller dose of Rx        
+                                  6                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                 70                   1  1:Often                                                                    
+                                269                   2  2:Sometimes                                                                
+                              7,165                   3  3:Never                                                                    
+ 
+RXS_SKIPRX         FREQFMT   SC20                How often skipped doses to make Rx last  
+                                  7                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                 50                   1  1:Often                                                                    
+                                221                   2  2:Sometimes                                                                
+                              7,232                   3  3:Never                                                                    
+ 
+RXS_DELAYRX        FREQFMT   SC20                How often delayed Rx because of cost     
+                                  5                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                 72                   1  1:Often                                                                    
+                                308                   2  2:Sometimes                                                                
+                              7,125                   3  3:Never                                                                    
+ 
+RXS_SAMPLERX       FREQFMT   SC21                How often asked for Rx samples from Dr   
+                                 19                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                                157                   1  1:Often                                                                    
+                                701                   2  2:Sometimes                                                                
+                              6,632                   3  3:Never                                                                    
+ 
+RXS_COMPARRX       FREQFMT   SC21                How often compared prices for best price 
+                                 14                   D  .D:Don't know                                                              
+                                  5                   R  .R:Refused                                                                 
+                                291                   1  1:Often                                                                    
+                                684                   2  2:Sometimes                                                                
+                              6,519                   3  3:Never                                                                    
+ 
+RXS_NOFILLRX       FREQFMT   SC21                How often not get Rx because of cost     
+                                  7                   D  .D:Don't know                                                              
+                                  4                   R  .R:Refused                                                                 
+                                 97                   1  1:Often                                                                    
+                                509                   2  2:Sometimes                                                                
+                              6,896                   3  3:Never                                                                    
+ 
+RXS_SPENTLRX       FREQFMT   SC21                How often spent less $ to save for Rx    
+                                  6                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                 62                   1  1:Often                                                                    
+                                277                   2  2:Sometimes                                                                
+                              7,165                   3  3:Never                                                                    
+ 
+RXS_CHAINRX        FREQFMT   SC21                How often purchased Rx through big chain 
+                                 33                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                462                   1  1:Often                                                                    
+                                350                   2  2:Sometimes                                                                
+                              6,665                   3  3:Never                                                                    
+ 
+RXS_STOPRX         FREQFMT   SC21                How often talk to Dr about stop Rx       
+                                 18                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                112                   1  1:Often                                                                    
+                                596                   2  2:Sometimes                                                                
+                              6,784                   3  3:Never                                                                    
+ 
+RXS_CREDRX         FREQFMT   SC21                How often pay with credit card for Rx    
+                                 10                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                229                   1  1:Often                                                                    
+                                367                   2  2:Sometimes                                                                
+                              6,904                   3  3:Never                                                                    
+ 
+RXS_NOINSRX        FREQFMT   SC21                How often purchase discounted Rx w/o ins 
+                                 42                   D  .D:Don't know                                                              
+                                  3                   R  .R:Refused                                                                 
+                                157                   1  1:Often                                                                    
+                                389                   2  2:Sometimes                                                                
+                              6,922                   3  3:Never                                                                    
+ 
+PUFSWGT                                          PUF Summer Ever Enrolled Full Sample Wt  
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS001                                          PUF Summer Ever Enrolled rep wt 1        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS002                                          PUF Summer Ever Enrolled rep wt 2        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS003                                          PUF Summer Ever Enrolled rep wt 3        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS004                                          PUF Summer Ever Enrolled rep wt 4        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS005                                          PUF Summer Ever Enrolled rep wt 5        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS006                                          PUF Summer Ever Enrolled rep wt 6        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS007                                          PUF Summer Ever Enrolled rep wt 7        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS008                                          PUF Summer Ever Enrolled rep wt 8        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS009                                          PUF Summer Ever Enrolled rep wt 9        
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS010                                          PUF Summer Ever Enrolled rep wt 10       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS011                                          PUF Summer Ever Enrolled rep wt 11       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS012                                          PUF Summer Ever Enrolled rep wt 12       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS013                                          PUF Summer Ever Enrolled rep wt 13       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS014                                          PUF Summer Ever Enrolled rep wt 14       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS015                                          PUF Summer Ever Enrolled rep wt 15       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS016                                          PUF Summer Ever Enrolled rep wt 16       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS017                                          PUF Summer Ever Enrolled rep wt 17       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS018                                          PUF Summer Ever Enrolled rep wt 18       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS019                                          PUF Summer Ever Enrolled rep wt 19       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS020                                          PUF Summer Ever Enrolled rep wt 20       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS021                                          PUF Summer Ever Enrolled rep wt 21       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS022                                          PUF Summer Ever Enrolled rep wt 22       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS023                                          PUF Summer Ever Enrolled rep wt 23       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS024                                          PUF Summer Ever Enrolled rep wt 24       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS025                                          PUF Summer Ever Enrolled rep wt 25       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS026                                          PUF Summer Ever Enrolled rep wt 26       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS027                                          PUF Summer Ever Enrolled rep wt 27       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS028                                          PUF Summer Ever Enrolled rep wt 28       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS029                                          PUF Summer Ever Enrolled rep wt 29       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS030                                          PUF Summer Ever Enrolled rep wt 30       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS031                                          PUF Summer Ever Enrolled rep wt 31       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS032                                          PUF Summer Ever Enrolled rep wt 32       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS033                                          PUF Summer Ever Enrolled rep wt 33       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS034                                          PUF Summer Ever Enrolled rep wt 34       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS035                                          PUF Summer Ever Enrolled rep wt 35       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS036                                          PUF Summer Ever Enrolled rep wt 36       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS037                                          PUF Summer Ever Enrolled rep wt 37       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS038                                          PUF Summer Ever Enrolled rep wt 38       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS039                                          PUF Summer Ever Enrolled rep wt 39       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS040                                          PUF Summer Ever Enrolled rep wt 40       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS041                                          PUF Summer Ever Enrolled rep wt 41       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS042                                          PUF Summer Ever Enrolled rep wt 42       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS043                                          PUF Summer Ever Enrolled rep wt 43       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS044                                          PUF Summer Ever Enrolled rep wt 44       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS045                                          PUF Summer Ever Enrolled rep wt 45       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS046                                          PUF Summer Ever Enrolled rep wt 46       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS047                                          PUF Summer Ever Enrolled rep wt 47       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS048                                          PUF Summer Ever Enrolled rep wt 48       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS049                                          PUF Summer Ever Enrolled rep wt 49       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS050                                          PUF Summer Ever Enrolled rep wt 50       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS051                                          PUF Summer Ever Enrolled rep wt 51       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS052                                          PUF Summer Ever Enrolled rep wt 52       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS053                                          PUF Summer Ever Enrolled rep wt 53       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS054                                          PUF Summer Ever Enrolled rep wt 54       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS055                                          PUF Summer Ever Enrolled rep wt 55       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS056                                          PUF Summer Ever Enrolled rep wt 56       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS057                                          PUF Summer Ever Enrolled rep wt 57       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS058                                          PUF Summer Ever Enrolled rep wt 58       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS059                                          PUF Summer Ever Enrolled rep wt 59       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS060                                          PUF Summer Ever Enrolled rep wt 60       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS061                                          PUF Summer Ever Enrolled rep wt 61       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS062                                          PUF Summer Ever Enrolled rep wt 62       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS063                                          PUF Summer Ever Enrolled rep wt 63       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS064                                          PUF Summer Ever Enrolled rep wt 64       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS065                                          PUF Summer Ever Enrolled rep wt 65       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS066                                          PUF Summer Ever Enrolled rep wt 66       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS067                                          PUF Summer Ever Enrolled rep wt 67       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS068                                          PUF Summer Ever Enrolled rep wt 68       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS069                                          PUF Summer Ever Enrolled rep wt 69       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS070                                          PUF Summer Ever Enrolled rep wt 70       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS071                                          PUF Summer Ever Enrolled rep wt 71       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS072                                          PUF Summer Ever Enrolled rep wt 72       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS073                                          PUF Summer Ever Enrolled rep wt 73       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS074                                          PUF Summer Ever Enrolled rep wt 74       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS075                                          PUF Summer Ever Enrolled rep wt 75       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS076                                          PUF Summer Ever Enrolled rep wt 76       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS077                                          PUF Summer Ever Enrolled rep wt 77       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS078                                          PUF Summer Ever Enrolled rep wt 78       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS079                                          PUF Summer Ever Enrolled rep wt 79       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS080                                          PUF Summer Ever Enrolled rep wt 80       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS081                                          PUF Summer Ever Enrolled rep wt 81       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS082                                          PUF Summer Ever Enrolled rep wt 82       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS083                                          PUF Summer Ever Enrolled rep wt 83       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS084                                          PUF Summer Ever Enrolled rep wt 84       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS085                                          PUF Summer Ever Enrolled rep wt 85       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS086                                          PUF Summer Ever Enrolled rep wt 86       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS087                                          PUF Summer Ever Enrolled rep wt 87       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS088                                          PUF Summer Ever Enrolled rep wt 88       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS089                                          PUF Summer Ever Enrolled rep wt 89       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS090                                          PUF Summer Ever Enrolled rep wt 90       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS091                                          PUF Summer Ever Enrolled rep wt 91       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS092                                          PUF Summer Ever Enrolled rep wt 92       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS093                                          PUF Summer Ever Enrolled rep wt 93       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS094                                          PUF Summer Ever Enrolled rep wt 94       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS095                                          PUF Summer Ever Enrolled rep wt 95       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS096                                          PUF Summer Ever Enrolled rep wt 96       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS097                                          PUF Summer Ever Enrolled rep wt 97       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS098                                          PUF Summer Ever Enrolled rep wt 98       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS099                                          PUF Summer Ever Enrolled rep wt 99       
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
+PUFS100                                          PUF Summer Ever Enrolled rep wt 100      
+                              7,513    LOW-HIGH          Range of Values                                                            
+ 
